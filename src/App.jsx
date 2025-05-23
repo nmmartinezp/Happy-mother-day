@@ -2,6 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import Card from "@components/Card";
 import Envelope from "@components/Envelope";
+import GithubCard from "@components/GithubCard";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,9 @@ function App() {
       ) : (
         <Card name="María" />
       )}
+      <div className="fixed bottom-0 left-0 w-full p-4 z-[9999]">
+        <GithubCard />
+      </div>
     </div>
   );
 }
